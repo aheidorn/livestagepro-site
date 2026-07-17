@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LiveStage Pro is a local-first live performance system for working bands.">
+  <meta name="theme-color" content="#08090c">
+  <title>LiveStage Pro — Built for the stage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="LiveStage Pro home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>LiveStage <b>Pro</b></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span><i></i><i></i>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#journey">Journey</a>
+      <a href="#documentation">Docs</a>
+      <a class="nav-status" href="#status"><span></span> Current status</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="stage-glow" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Local-first performance software</p>
+        <h1>Your show.<br><em>In perfect sync.</em></h1>
+        <p class="hero-lede">LiveStage Pro keeps songs, setlists, shared cues, and the flow of a performance in one focused workspace—built for working bands.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#overview">Explore the system <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#status">See development status</a>
+        </div>
+      </div>
+      <div class="hero-console reveal" aria-label="Stylized LiveStage Pro interface preview">
+        <div class="console-top"><span class="console-logo">LSP</span><span>Live session</span><span class="signal">Connected</span></div>
+        <div class="console-body">
+          <div class="setlist-panel">
+            <small>TONIGHT'S SET</small>
+            <div class="song played"><b>01</b><span>Midnight Drive<small>Completed</small></span></div>
+            <div class="song active"><b>02</b><span>Neon Weather<small>Now playing</small></span><i></i></div>
+            <div class="song"><b>03</b><span>Long Way Home<small>Up next</small></span></div>
+            <div class="song"><b>04</b><span>Static Hearts<small>Queued</small></span></div>
+          </div>
+          <div class="player-panel">
+            <div class="art-placeholder"><span>LIVE</span><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+            <small>NOW PLAYING</small><h3>Neon Weather</h3><p>Verse 2 · 118 BPM</p>
+            <div class="progress"><i></i></div><div class="times"><span>02:18</span><span>04:07</span></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#overview" aria-label="Scroll to overview"><span></span></a>
+    </section>
+
+    <section id="overview" class="section overview">
+      <div class="section-heading reveal"><p class="kicker">01 / Overview</p><h2>Everything the band needs.<br><span>Nothing it doesn’t.</span></h2></div>
+      <div class="feature-grid">
+        <article class="feature feature-wide reveal"><div class="feature-number">01</div><div><h3>One shared show state</h3><p>Keep the band aligned around what is playing now and what comes next, without getting in the way of the performance.</p></div><div class="mini-transport" aria-hidden="true"><span>NOW</span><b>Neon Weather</b><i></i><small>Shared across the band</small></div></article>
+        <article class="feature reveal"><div class="feature-icon queue-icon" aria-hidden="true"><i></i><i></i><i></i></div><h3>A queue that stays out of the way</h3><p>Plan upcoming songs together while the current performance continues uninterrupted.</p></article>
+        <article class="feature reveal"><div class="feature-icon preview-icon" aria-hidden="true"><i></i></div><h3>Private space to prepare</h3><p>Preview songs and arrange your workspace locally, without changing what anyone else sees or hears.</p></article>
+        <article class="feature feature-accent reveal"><p class="quote">“Built around the way a real stage actually works.”</p><div class="accent-line"></div></article>
+      </div>
+    </section>
+
+    <section id="philosophy" class="section philosophy">
+      <div class="section-heading reveal"><p class="kicker">02 / Design philosophy</p><h2>Calm under<br><span>stage pressure.</span></h2></div>
+      <div class="principles">
+        <article class="principle reveal"><span>01</span><div><h3>Local first</h3><p>The show should not depend on a distant service. Performance data stays close, responsive, and under the band’s control.</p></div></article>
+        <article class="principle reveal"><span>02</span><div><h3>Clear boundaries</h3><p>Shared playback, the upcoming queue, and each performer’s private preparation remain distinct by design.</p></div></article>
+        <article class="principle reveal"><span>03</span><div><h3>Performance focused</h3><p>Large targets, high contrast, and deliberate information hierarchy help musicians act quickly in low-light environments.</p></div></article>
+        <article class="principle reveal"><span>04</span><div><h3>Band shaped</h3><p>Songs, members, libraries, and setlists reflect familiar band workflows instead of forcing the stage into office software.</p></div></article>
+      </div>
+    </section>
+
+    <section id="journey" class="section journey">
+      <div class="section-heading reveal"><p class="kicker">03 / Development journey</p><h2>Built one reliable<br><span>layer at a time.</span></h2><p class="heading-note">LiveStage Pro is an active prototype, growing through small, testable milestones.</p></div>
+      <div class="timeline reveal">
+        <article><time>Foundation</time><i></i><div><h3>Local performance model</h3><p>Established the core model for bands, songs, members, libraries, and setlists.</p></div></article>
+        <article><time>Connection</time><i></i><div><h3>Shared live sessions</h3><p>Connected host and browser clients around authoritative show state.</p></div></article>
+        <article><time>Workflow</time><i></i><div><h3>Queue, preview, and workspace</h3><p>Separated shared performance actions from private performer preparation.</p></div></article>
+        <article class="current"><time>Now</time><i></i><div><h3>Refinement in progress</h3><p>Improving the complete rehearsal-to-stage experience and hardening the prototype.</p></div></article>
+      </div>
+    </section>
+
+    <section id="documentation" class="section docs">
+      <div class="section-heading reveal"><p class="kicker">04 / Documentation</p><h2>The thinking behind<br><span>the system.</span></h2></div>
+      <div class="doc-grid">
+        <article class="doc-card reveal"><span>GUIDE 01</span><h3>Product overview</h3><p>A high-level tour of the system, its audience, and the problems it is designed to solve.</p><span class="coming-soon">Coming soon</span></article>
+        <article class="doc-card reveal"><span>GUIDE 02</span><h3>Technical architecture</h3><p>How the host, embedded server, browser client, and shared models fit together.</p><span class="coming-soon">Coming soon</span></article>
+        <article class="doc-card reveal"><span>GUIDE 03</span><h3>Performance workflow</h3><p>The operating model for transport, queue, preview, workspace, and performer roles.</p><span class="coming-soon">Coming soon</span></article>
+      </div>
+      <p class="docs-note reveal">Public documentation will be added as the prototype matures. No private application source is published here.</p>
+    </section>
+
+    <section id="status" class="section status">
+      <div class="status-card reveal">
+        <div><p class="kicker">05 / Current status</p><div class="status-label"><span></span> Active development</div><h2>A working prototype,<br><em>still finding its final form.</em></h2></div>
+        <div class="status-copy"><p>LiveStage Pro currently includes a native macOS host, an embedded local server, and a browser-based performer client. Core show-state and content workflows are being built and refined.</p><p>The project is not yet available as a public release. This site will track meaningful progress as development continues.</p><a href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>LiveStage <b>Pro</b></span></a><p>Built for working bands.</p><p>© <span data-year></span> LiveStage Pro</p></footer>
+</body>
+</html>
