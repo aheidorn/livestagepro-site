@@ -29,6 +29,7 @@ The included `CNAME` file configures the custom domain `livestagepro.app`. The d
 - `index.html` — site structure and content
 - `styles.css` — responsive visual design
 - `script.js` — navigation, reveal effects, and current year
+- `stage-background.jpg` — optimized public splash artwork used by the hero
 - `CNAME` — GitHub Pages custom domain
 
 ## Content boundary

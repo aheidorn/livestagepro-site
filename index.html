@@ -6,6 +6,7 @@
   <meta name="description" content="LiveStage Pro is a local-first live performance system for working bands.">
   <meta name="theme-color" content="#08090c">
   <title>LiveStage Pro — Built for the stage</title>
+  <link rel="preload" href="stage-background.jpg" as="image">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -40,22 +41,22 @@
           <a class="button button-quiet" href="#status">See development status</a>
         </div>
       </div>
-      <div class="hero-console reveal" aria-label="Stylized LiveStage Pro interface preview">
-        <div class="console-top"><span class="console-logo">LSP</span><span>Live session</span><span class="signal">Connected</span></div>
-        <div class="console-body">
-          <div class="setlist-panel">
-            <small>TONIGHT'S SET</small>
-            <div class="song played"><b>01</b><span>Midnight Drive<small>Completed</small></span></div>
-            <div class="song active"><b>02</b><span>Neon Weather<small>Now playing</small></span><i></i></div>
-            <div class="song"><b>03</b><span>Long Way Home<small>Up next</small></span></div>
-            <div class="song"><b>04</b><span>Static Hearts<small>Queued</small></span></div>
-          </div>
-          <div class="player-panel">
-            <div class="art-placeholder"><span>LIVE</span><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
-            <small>NOW PLAYING</small><h3>Neon Weather</h3><p>Verse 2 · 118 BPM</p>
-            <div class="progress"><i></i></div><div class="times"><span>02:18</span><span>04:07</span></div>
-          </div>
+      <div class="hero-console webclient-preview reveal" aria-label="Representative preview of the LiveStage Pro WebClient">
+        <div class="performance-preview-bar">
+          <button type="button" tabindex="-1" aria-hidden="true">☰</button>
+          <div class="preview-song"><strong>Neon Weather</strong><span>|</span><b>Key: D</b><small>Next: Long Way Home</small></div>
+          <div class="preview-transport"><button type="button" tabindex="-1" aria-hidden="true">▶</button><button type="button" tabindex="-1" aria-hidden="true">■</button><button type="button" tabindex="-1" aria-hidden="true">⏭</button></div>
+          <button type="button" tabindex="-1" aria-hidden="true">⚙</button><button type="button" tabindex="-1" aria-hidden="true">☷</button>
         </div>
+        <div class="webclient-workspace">
+          <div class="chart-preview">
+            <div class="chart-heading"><div><small>NOW PLAYING · CHART</small><h3>Neon Weather</h3><p>The Satellites</p></div><div><span>KEY</span><b>D</b><span>118 BPM</span></div></div>
+            <div class="chart-section"><span>VERSE 2</span><p><b>D</b><b>A</b><b>Bm</b><b>G</b></p><p>Streetlights hum in time tonight</p><p><b>D</b><b>A</b><b>G</b><b>G</b></p><p>We follow every fading line</p></div>
+            <div class="chart-section muted-chart"><span>CHORUS</span><p><b>Bm</b><b>G</b><b>D</b><b>A</b></p><p>Hold on through the neon weather</p></div>
+          </div>
+          <aside class="queue-preview"><div class="queue-heading"><strong>Queue</strong><span>×</span></div><div class="queue-item current"><i>1</i><div><b>Neon Weather</b><small>Now playing</small></div></div><div class="queue-item"><i>2</i><div><b>Long Way Home</b><small>The Satellites</small></div><span>☰</span></div><div class="queue-item"><i>3</i><div><b>Static Hearts</b><small>The Satellites</small></div><span>☰</span></div><div class="queue-note">Shared queue · 3 songs</div></aside>
+        </div>
+        <div class="preview-caption"><span class="signal">Connected</span><span>Representative WebClient preview</span></div>
       </div>
       <a class="scroll-cue" href="#overview" aria-label="Scroll to overview"><span></span></a>
     </section>
