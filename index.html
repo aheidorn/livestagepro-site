@@ -38,7 +38,7 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span> Local-first performance software</p>
         <h1>Your show.<br><em>In perfect sync.</em></h1>
-        <p class="hero-lede">LiveStage Pro keeps songs, setlists, shared cues, and the flow of a performance in sync across Mac, iPhone, iPad, Apple Watch, and the web—shaped by rehearsal and tested on a real stage.</p>
+        <p class="hero-lede">LiveStage Pro keeps songs, setlists, shared cues, and the flow of a performance in sync across Mac, iPhone, iPad, Apple Watch, and the web—shaped by rehearsal, independent review, and real performances.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#overview">Explore the system <span aria-hidden="true">↓</span></a>
           <a class="button button-quiet" href="#status">See development status</a>
@@ -68,9 +68,9 @@
       <div class="section-heading reveal"><p class="kicker">01 / Overview</p><h2>Everything the band needs.<br><span>Nothing it doesn’t.</span></h2></div>
       <div class="feature-grid">
         <article class="feature feature-wide reveal"><div class="feature-number">01</div><div><h3>One shared show state</h3><p>Keep the band aligned around what is playing now and what comes next, whether performers join from a native Apple client or a browser.</p></div><div class="mini-transport" aria-hidden="true"><span>NOW</span><b>Neon Weather</b><i></i><small>Shared across the band</small></div></article>
-        <article class="feature reveal"><div class="feature-icon queue-icon" aria-hidden="true"><i></i><i></i><i></i></div><h3>A shared queue built for change</h3><p>Search Songs or Setlists beside the live Queue, then add, reorder, or remove what comes next without hiding transport controls. Concurrent edits are applied against authoritative state while the current performance continues uninterrupted.</p></article>
+        <article class="feature reveal"><div class="feature-icon queue-icon" aria-hidden="true"><i></i><i></i><i></i></div><h3>A shared queue built for change</h3><p>Search Songs or Setlists beside the live Queue, then add, reorder, or remove what comes next without hiding transport controls. Concurrent requests are serialized against authoritative state while the current performance continues uninterrupted.</p></article>
         <article class="feature reveal"><div class="feature-icon preview-icon" aria-hidden="true"><i></i></div><h3>Private space to prepare</h3><p>High-contrast Preview makes private inspection unmistakable and puts Add Next or Add to Queue beside the Song. Chart appearance, Display Key, instrument, spelling, and capo remain local to the performer and device.</p></article>
-        <article class="feature feature-accent reveal"><p class="quote">“Bring it in. Move it between Bands. Back it up. Restore it when needed.”</p><div class="accent-line"></div></article>
+        <article class="feature feature-accent reveal"><p class="quote">“Make it go. Make it dependable. Then earn the next layer.”</p><div class="accent-line"></div></article>
       </div>
     </section>
 
@@ -80,18 +80,18 @@
         <article class="principle reveal"><span>01</span><div><h3>Local first</h3><p>The show should not depend on a distant service. Performance data stays close, responsive, and under the band’s control.</p></div></article>
         <article class="principle reveal"><span>02</span><div><h3>Clear boundaries</h3><p>Shared playback, Queue, and Performance Key remain authoritative for the Band. Preview, workspace, and Display Key remain personal to each performer and device.</p></div></article>
         <article class="principle reveal"><span>03</span><div><h3>Performance focused</h3><p>High-frequency actions stay visible, confirm success, and recover cleanly. Large targets, readable charts, and quiet reconnection help musicians keep moving under stage pressure.</p></div></article>
-        <article class="principle reveal"><span>04</span><div><h3>Band shaped</h3><p>Songs, members, libraries, and setlists reflect familiar band workflows. Imports, replacements, and restores are reviewed before they commit, because recoverability is part of a dependable show system.</p></div></article>
+        <article class="principle reveal"><span>04</span><div><h3>Earn the next layer</h3><p>An experiment can succeed without becoming a feature. Audio, MIDI, lighting, and automation expand only when real hardware, rehearsals, and performances show that they make the system more dependable.</p></div></article>
       </div>
     </section>
 
     <section id="journey" class="section journey">
-      <div class="section-heading reveal"><p class="kicker">03 / Development journey</p><h2>Built one reliable<br><span>layer at a time.</span></h2><p class="heading-note">LiveStage Pro is an active prototype, growing through small, testable milestones.</p></div>
+      <div class="section-heading reveal"><p class="kicker">03 / Development journey</p><h2>Built one reliable<br><span>layer at a time.</span></h2><p class="heading-note">LiveStage Pro is moving from a working prototype toward a trusted show system through small, testable milestones.</p></div>
       <div class="timeline reveal">
         <article><time>Foundation</time><i></i><div><h3>Local performance model</h3><p>Established the core model for bands, songs, members, libraries, and setlists.</p></div></article>
         <article><time>Connection</time><i></i><div><h3>Shared live sessions</h3><p>Connected Mac and browser clients around authoritative show state, with clear separation between shared performance and private preparation.</p></div></article>
         <article><time>Native</time><i></i><div><h3>iPhone, iPad, and Watch</h3><p>Added native performer workspaces, local session discovery, queue and setlist tools, private Preview, and a compact Watch transport companion.</p></div></article>
         <article><time>On stage</time><i></i><div><h3>From demonstration to dogfooding</h3><p>Repeated rehearsals and live shows now drive the design: safer Queue editing, unmistakable Preview, consistent transport controls, adaptable charts, quieter reconnection, and explicit recovery tools.</p></div></article>
-        <article class="current"><time>Portability</time><i></i><div><h3>The whole show can move</h3><p>Completed native sharing for individual or selected Songs, self-contained Setlists and gig books, plus whole Band and Personal Library backup and restore. Copy To moves reviewed content between a Band and Personal Library without disturbing the source.</p></div></article>
+        <article class="current"><time>Trust</time><i></i><div><h3>Hardening the whole show</h3><p>Serialized authoritative state changes, expanded regression coverage, and strengthened content recovery. Established a macOS 12-or-later baseline for Intel and Apple silicon, then began measured internal-audio-plus-MIDI trials without treating experimental lighting or automation as finished features.</p></div></article>
       </div>
     </section>
 
@@ -108,7 +108,7 @@
     <section id="status" class="section status">
       <div class="status-card reveal">
         <div><p class="kicker">05 / Current status</p><div class="status-label"><span></span> Active development</div><h2>Tested on stage,<br><em>still earning trust.</em></h2></div>
-        <div class="status-copy"><p>LiveStage Pro has now run through full stage-network rehearsals and multiple live-show dogfooding sessions—including recovery after an unexpected Host-computer restart. The native macOS Host has synchronized iPhone, iPad, Apple Watch, and browser performers while driving the existing external MIDI playback and lighting workflow.</p><p>The preparation workflow can now import SongBook Pro material, attach existing audio and MIDI, share selected Songs or complete Setlists, copy content between a Band and Personal Library, and back up or restore an entire Band or Library. Reviewed Add, Update, Replace, or Skip choices keep changes deliberate. The longer-term direction is to bring local content authoring, playback, and session hosting to iPadOS for bands that perform without a laptop; today, hosting remains a macOS capability and the project remains an active, unreleased prototype.</p><a href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
+        <div class="status-copy"><p>LiveStage Pro has now run through full stage-network rehearsals and multiple live-show dogfooding sessions—including recovery after an unexpected Host-computer restart. Recent hardening work strengthened concurrent shared-state handling, reconnection behavior, content safety, and the regression checks around those boundaries.</p><p>Current Mac Host builds require macOS 12 Monterey or later and support both Intel and Apple silicon. Experimental internal audio can follow a Song’s companion MIDI timeline while treating audio as the performance priority if MIDI output fails. That path has passed focused tests, but full-rig timing, lighting, and sustained-show reliability still have to earn acceptance on the actual hardware.</p><p>Portable Songs, Setlists, Bands, and Personal Libraries remain part of the foundation. Richer lighting control, OSC, performance timelines, and iPad hosting are deliberate future directions—not promises for the next build. The near-term priority is a rehearsed, recoverable show system whose core behavior stays calm when the stage is not.</p><a href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
       </div>
     </section>
   </main>
