@@ -31,7 +31,13 @@ The included `CNAME` file configures the custom domain `livestagepro.app`. The d
 - `script.js` — navigation, reveal effects, and current year
 - `stage-background.jpg` — optimized public splash artwork used by the hero
 - `favicon-32.png`, `icon-192.png`, and `icon-512.png` — LiveStage Pro app icon assets used for browser and site branding
+- `sitemap.xml` — canonical homepage URL for search-engine discovery
+- `robots.txt` — permits crawling and advertises the sitemap
 - `CNAME` — GitHub Pages custom domain
+
+## Search indexing
+
+The canonical public URL is `https://livestagepro.app/`. HTTP and `www` variants should redirect to that address and should not be listed in the sitemap. Submit `https://livestagepro.app/sitemap.xml` in Google Search Console after deployment.
 
 ## Content boundary
 

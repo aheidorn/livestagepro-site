@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="LiveStage Pro is a local-first live performance system connecting working bands across Mac, iPhone, iPad, Apple Watch, and the web.">
   <meta name="theme-color" content="#08090c">
-  <title>LiveStage Pro — Built for the stage</title>
+  <title>LiveStage Pro — Local-first performance software for working bands</title>
+  <link rel="canonical" href="https://livestagepro.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LiveStage Pro">
+  <meta property="og:title" content="LiveStage Pro — Built for the stage">
+  <meta property="og:description" content="A local-first live performance system connecting working bands across Mac, iPhone, iPad, Apple Watch, and the web.">
+  <meta property="og:url" content="https://livestagepro.app/">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="preload" href="stage-background.jpg" as="image">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "LiveStage Pro",
+      "alternateName": ["LiveStagePro", "LSP", "livestagepro.app"],
+      "url": "https://livestagepro.app/"
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -68,7 +83,7 @@
       <div class="section-heading reveal"><p class="kicker">01 / Overview</p><h2>Everything the band needs.<br><span>Nothing it doesn’t.</span></h2></div>
       <div class="feature-grid">
         <article class="feature feature-wide reveal"><div class="feature-number">01</div><div><h3>One shared show state</h3><p>Keep the band aligned around what is playing now and what comes next, whether performers join from a native Apple client or a browser.</p></div><div class="mini-transport" aria-hidden="true"><span>NOW</span><b>Neon Weather</b><i></i><small>Shared across the band</small></div></article>
-        <article class="feature reveal"><div class="feature-icon queue-icon" aria-hidden="true"><i></i><i></i><i></i></div><h3>A shared queue built for change</h3><p>Search Songs or Setlists beside the live Queue, then add, reorder, or remove what comes next without hiding transport controls. Concurrent requests are serialized against authoritative state while the current performance continues uninterrupted.</p></article>
+        <article class="feature reveal"><div class="feature-icon queue-icon" aria-hidden="true"><i></i><i></i><i></i></div><h3>A shared queue built for change</h3><p>Search Songs or Setlists beside the live Queue, then add, reorder, remove, or move any waiting Song to Next without hiding transport controls. Concurrent requests are serialized against authoritative state while the current performance continues uninterrupted.</p></article>
         <article class="feature reveal"><div class="feature-icon preview-icon" aria-hidden="true"><i></i></div><h3>Private space to prepare</h3><p>High-contrast Preview makes private inspection unmistakable and puts Add Next or Add to Queue beside the Song. Chart appearance, Display Key, instrument, spelling, and capo remain local to the performer and device.</p></article>
         <article class="feature feature-accent reveal"><p class="quote">“Make it go. Make it dependable. Then earn the next layer.”</p><div class="accent-line"></div></article>
       </div>
@@ -91,7 +106,7 @@
         <article><time>Connection</time><i></i><div><h3>Shared live sessions</h3><p>Connected Mac and browser clients around authoritative show state, with clear separation between shared performance and private preparation.</p></div></article>
         <article><time>Native</time><i></i><div><h3>iPhone, iPad, and Watch</h3><p>Added native performer workspaces, local session discovery, queue and setlist tools, private Preview, and a compact Watch transport companion.</p></div></article>
         <article><time>On stage</time><i></i><div><h3>From demonstration to dogfooding</h3><p>Repeated rehearsals and live shows now drive the design: safer Queue editing, unmistakable Preview, consistent transport controls, adaptable charts, quieter reconnection, and explicit recovery tools.</p></div></article>
-        <article class="current"><time>Acceptance</time><i></i><div><h3>Taking the whole rig to the show</h3><p>Added editable Song-cue actions and separate rig-level MIDI actions for Internal Audio and External MIDI, restored self-contained deployment on the Ventura show Mac, and exercised the catalog-wide audio-plus-MIDI path with real lights. Rehearsals and upcoming gigs now decide what is dependable enough to keep.</p></div></article>
+        <article class="current"><time>Acceptance</time><i></i><div><h3>Taking the whole rig to the show</h3><p>After exercising the catalog-wide audio-plus-MIDI path with real lights, the current pass is tightening show flow: safer Preview-to-Queue handoff, one-tap Move to Next, optional natural-end advance, visible audio progress, and native reconnection when the Host changes address. Upcoming gigs now decide what is dependable enough to keep.</p></div></article>
       </div>
     </section>
 
@@ -108,7 +123,7 @@
     <section id="status" class="section status">
       <div class="status-card reveal">
         <div><p class="kicker">05 / Current status</p><div class="status-label"><span></span> Active development</div><h2>Tested on stage,<br><em>still earning trust.</em></h2></div>
-        <div class="status-copy"><p>LiveStage Pro has now run through full stage-network rehearsals and multiple live-show dogfooding sessions—including recovery after an unexpected Host-computer restart. Recent hardening and code review strengthened concurrent shared-state handling, reconnection behavior, content safety, deployment packaging, and the regression checks around those boundaries.</p><p>Current Mac Host builds require macOS 12 Monterey or later and support both Intel and Apple silicon. Internal Audio can follow a Song’s companion MIDI timeline while treating audio as the performance priority if MIDI output fails. The catalog-wide path has now driven real lights in focused testing, but multi-Song timing and sustained full-rig reliability still have to earn acceptance through rehearsals and live shows.</p><p>Songs can now carry editable, ordered MIDI actions that prepare external gear when the authoritative Song changes. The Host also keeps separate, ordered Cue, Play, Pause, Resume, and Stop actions for Internal Audio and External MIDI, so a new playback path does not accidentally wake the old rig. Previewing or adding a future Song to the Queue still cannot fire those actions.</p><p>Portable Songs, Setlists, Bands, and Personal Libraries remain part of the foundation. Richer lighting control, OSC, performance timelines, configurable pedal transport, and iPad hosting are deliberate future directions—not promises for the next build. Upcoming gigs will test the show Mac, audio and lighting timing, phone and Watch control, reconnection, recovery, and the discipline to freeze a rehearsed candidate before expanding the feature set again.</p><a href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
+        <div class="status-copy"><p>LiveStage Pro has now run through full stage-network rehearsals and multiple live-show dogfooding sessions—including recovery after an unexpected Host-computer restart. Recent hardening and code review strengthened concurrent shared-state handling, content safety, deployment packaging, and the regression checks around those boundaries.</p><p>Current Mac Host builds require macOS 12 Monterey or later and support both Intel and Apple silicon. Internal Audio can follow a Song’s companion MIDI timeline while treating audio as the performance priority if MIDI output fails. The catalog-wide path has now driven real lights in focused testing, but multi-Song timing and sustained full-rig reliability still have to earn acceptance through rehearsals and live shows.</p><p>Show-time Queue work now returns a performer from a successful Preview action to Current, offers Move to Next throughout the Queue, and can optionally advance only after Internal Audio reaches its natural end. Race protection prevents a simultaneous Next gesture from skipping the newly cued Song, while the Mac adds a compact playback-progress line. Native iPhone and iPad clients can also follow their remembered Band when the Host reappears at a new local-network address.</p><p>Songs carry editable MIDI actions for preparing external gear, while the Host keeps separate Cue, Play, Pause, Resume, and Stop actions for Internal Audio and External MIDI. Previewing or adding a future Song to the Queue cannot fire those actions. Portable Songs, Setlists, Bands, and Personal Libraries remain part of the foundation.</p><p>Upcoming gigs will test the show Mac, audio and lighting timing, phone and Watch control, reconnection, recovery, and the discipline to freeze a rehearsed candidate before expanding the feature set again. Setlist overrides and presentation persistence remain next; iPad hosting follows as a small local-Wi-Fi beta before any router-free native Apple networking experiment.</p><a href="#top">Back to the top <span aria-hidden="true">↑</span></a></div>
       </div>
     </section>
   </main>
